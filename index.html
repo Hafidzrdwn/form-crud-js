@@ -7,147 +7,131 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Form Pemesanan Lunar Media Store</h1>
-      <p class="tagline">Get your own premium apps now!</p>
-      <form id="orderForm">
-        <div class="form-group">
-          <label for="nama">Nama Lengkap:</label>
-          <input
-            type="text"
-            id="nama"
-            name="nama"
-            placeholder="Zakiyah Yasmin"
-            required
-          />
-        </div>
+    <div id="container">
+      <div class="form-order">
+        <h1>Form Pemesanan Lunar Media Store</h1>
+        <p class="tagline">Get your own premium apps now!</p>
+        <form id="orderForm" autocomplete="off">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Zakiyah Yasmin"
+              required
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="tanggal">Tanggal Pemesanan:</label>
-          <input type="date" id="tanggal" name="tanggal" required />
-        </div>
+          <div class="form-group">
+            <label for="tanggal">Tanggal Pemesanan</label>
+            <input type="date" id="tanggal" name="tanggal" disabled />
+          </div>
 
-        <!-- KASI SELECT BOX LAGI (JENIS APLIKASI, APLIKASI, DURASI) -->
-        <div class="form-group">
-          <label for="jenisaplikasi">Jenis Aplikasi</label>
-          <select name="jenisaplikasi" id="jenisaplikasi" required>
-            <option value="">-- Pilih Jenis Aplikasi --</option>
-            <option value="editing">Editing Apps</option>
-            <option value="movie">Movie Apps</option>
-            <option value="listening">Music Apps</option>
-            <option value="education">Education Apps</option>
-            <option value="topup">Top Up Apps</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="jenisAplikasi">Jenis Aplikasi</label>
+            <select name="jenisaplikasi" id="jenisAplikasi">
+              <option value="">-- Pilih Jenis Aplikasi --</option>
+              <option value="editing">Editing Apps</option>
+              <option value="movie">Movie Apps</option>
+              <option value="listening">Listening Apps</option>
+              <option value="education">Education Apps</option>
+              <option value="topup">Top Up Game</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="aplikasi">Aplikasi</label>
-          <select name="aplikasi" id="aplikasi" required>
-            <option value="">-- Pilih Aplikasi --</option>
-            <option value=""></option>
-            <option value="">Canva</option>
-            <option value="">Capcut</option>
-            <option value="">Remini</option>
-            <option value="">VSCO</option>
-            <option value="">Alight Motion</option>
-            <option value="">PicsArt Gold</option>
-            <option value="">Netflix</option>
-            <option value="">Youtube Premium</option>
-            <option value="">Viu</option>
-            <option value="">Disney+ Hotstar</option>
-            <option value="">LokLok</option>
-            <option value="">Vidio Premier</option>
-            <option value="">WeTV</option>
-            <option value="">IQIYI</option>
-            <option value="">Bstation</option>
-            <option value="">Amazon Prime</option>
-            <option value="">HBO GO</option>
-            <option value="">Spotify</option>
-            <option value="">Apple Music</option>
-            <option value="">Chat GPT Pro</option>
-            <option value="">TUrnitin</option>
-            <option value="">Zoom Premium</option>
-            <option value="">Mobile Legend</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="aplikasi">Aplikasi</label>
+            <select name="aplikasi" id="aplikasi" disabled>
+              <option value="">-- Pilih Aplikasi --</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="durasi">Durasi</label>
-          <select name="durasi" id="durasi" required>
-            <option value="">-- Pilih Durasi --</option>
-            <option value="">1 Days</option>
-            <option value="">2 Days</option>
-            <option value="">3 Days</option>
-            <option value="">1 Week</option>
-            <option value="">1 Month</option>
-            <option value="">3 Month</option>
-            <option value="">1 Year</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="tipeOrder">Tipe Order Aplikasi</label>
+            <select name="tipeorder" id="tipeOrder" disabled>
+              <option value="">-- Pilih Tipe --</option>
+            </select>
+          </div>
 
-        <!-- KASI SELECT BOX JUGA JENIS ORDER (SHAR,PRIV,FAM,IND) -->
+          <div class="form-group">
+            <label for="durasi">Durasi</label>
+            <select name="durasi" id="durasi" disabled>
+              <option value="">-- Pilih Durasi --</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="jenisorder">Jenis Order</label>
-          <select name="jenisorder" id="jenisorder" required>
-            <option value="">-- Pilih Jenis --</option>
-            <option value="">Private</option>
-            <option value="">Semi Private</option>
-            <option value="">1P1U</option>
-            <option value="">1P2U</option>
-            <option value="">Fam Plan</option>
-            <option value="">Ind Plan</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="zakiy@gmail.com"
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="aktivasi">Aktivasi/Perpanjangan:</label>
-          <select id="aktivasi" name="aktivasi" required>
-            <option value="">-- Pilih Jenis Aktivasi --</option>
-            <option value="baru">Aktivasi Baru</option>
-            <option value="perpanjangan">Perpanjangan</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="device">Lokasi dan Merk Device</label>
+            <input
+              type="text"
+              id="device"
+              name="device"
+              placeholder="Contoh: Jakarta, Samsung S22"
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="zakiy@gmail.com"
-            required
-          />
-        </div>
+          <div class="form-group">
+            <label for="payment">Metode Pembayaran</label>
+            <select id="payment" name="payment">
+              <option value="">-- Pilih Metode Pembayaran --</option>
+              <option value="qris">QRIS</option>
+              <option value="dana">DANA - +6282234171488 a.n. Z</option>
+              <option value="shopeepay">
+                SHOPEEPAY - +6282234171488 a.n. Z
+              </option>
+              <option value="ovo">OVO (+1k) - +6282234171488 a.n. Z</option>
+              <option value="bni">BANK BNI - 1787281307 a.n. Z</option>
+              <option value="jagosyariah">
+                BANK JAGO Syariah - 503273818564 a.n. Z
+              </option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="device">Lokasi dan Merk Device:</label>
-          <input
-            type="text"
-            id="device"
-            name="device"
-            placeholder="Contoh: Jakarta, Samsung S22"
-            required
-          />
-        </div>
+          <button type="submit" class="submit-btn">Order Sekarang</button>
+        </form>
+      </div>
+      <div class="detail-order">
+        <h2>Detail Order</h2>
 
-        <div class="form-group">
-          <label for="payment">Metode Pembayaran:</label>
-          <select id="payment" name="payment" required>
-            <option value="">-- Pilih Metode Pembayaran --</option>
-            <option value="bca">Transfer BCA</option>
-            <option value="bni">Transfer BNI</option>
-            <option value="mandiri">Transfer Mandiri</option>
-            <option value="bri">Transfer BRI</option>
-            <option value="gopay">GoPay</option>
-            <option value="ovo">OVO</option>
-            <option value="dana">DANA</option>
-            <option value="shopeepay">ShopeePay</option>
-          </select>
-        </div>
-
-        <button type="submit" class="submit-btn">Order Sekarang</button>
-      </form>
+        <ul class="list-group">
+          <li class="list-group-item">Nama Lengkap :</li>
+          <li class="list-group-item">Tanggal Pemesanan :</li>
+          <li class="list-group-item">Email :</li>
+          <li class="list-group-item">Metode Pembayaran :</li>
+        </ul>
+      </div>
     </div>
+
+    <div class="data-table">
+      <h2>List Data Pemesanan</h2>
+      <hr />
+      <!-- <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Tanggal</th>
+            <th>Aktivasi</th>
+            <th>Email</th>
+            <th>Pembayaran</th>
+          </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+      </table> -->
+
+      <h2 class="order-empty">Belum ada order.</h2>
+    </div>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>

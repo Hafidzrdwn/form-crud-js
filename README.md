@@ -11,3 +11,12 @@ UPN "Veteran" Jawa Timur - Fakultas Ilmu Komputer - Sistem Informasi
 > 2. Hafidz Ridwan Cahya (23082010093)
 > 3. Fajar Ramadhandi Hidayat (23082010099)
 > 4. Zakiyah Yasmin Aska Dewi (23082010114)
+
+## 📚 ToDo
+
+- Menampilkan Detail
+- Validation Form
+- Menampilkan Data di Tabel (R)
+- Menambahkan Data (C)
+- Mengubah Data (U)
+- Menghapus Data (D)
