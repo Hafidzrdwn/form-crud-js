@@ -7,131 +7,134 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
-      <div class="form-order">
-        <h1>Form Pemesanan Lunar Media Store</h1>
-        <p class="tagline">Get your own premium apps now!</p>
-        <form id="orderForm" autocomplete="off">
-          <div class="form-group">
-            <label for="nama">Nama Lengkap</label>
-            <input
-              type="text"
-              id="nama"
-              name="nama"
-              placeholder="Zakiyah Yasmin"
-              required
-            />
-          </div>
+    <div class="form-order">
+      <h1>Form Pemesanan Lunar Media Store</h1>
+      <p class="tagline">Get your own premium apps now!</p>
+      <form id="orderForm" autocomplete="off">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Zakiyah Yasmin"
+          />
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="tanggal">Tanggal Pemesanan</label>
-            <input type="date" id="tanggal" name="tanggal" disabled />
-          </div>
+        <div class="form-group">
+          <label for="tanggal">Tanggal Pemesanan</label>
+          <input type="date" id="tanggal" name="tanggal" disabled />
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="jenisAplikasi">Jenis Aplikasi</label>
-            <select name="jenisaplikasi" id="jenisAplikasi">
-              <option value="">-- Pilih Jenis Aplikasi --</option>
-              <option value="editing">Editing Apps</option>
-              <option value="movie">Movie Apps</option>
-              <option value="listening">Listening Apps</option>
-              <option value="education">Education Apps</option>
-              <option value="topup">Top Up Game</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="jenisAplikasi">Jenis Aplikasi</label>
+          <select name="jenisaplikasi" id="jenisAplikasi">
+            <option value="">-- Pilih Jenis Aplikasi --</option>
+            <option value="editing">Editing Apps</option>
+            <option value="movie">Movie Apps</option>
+            <option value="listening">Listening Apps</option>
+            <option value="education">Education Apps</option>
+            <option value="topup">Top Up Game</option>
+          </select>
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="aplikasi">Aplikasi</label>
-            <select name="aplikasi" id="aplikasi" disabled>
-              <option value="">-- Pilih Aplikasi --</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="aplikasi">Aplikasi</label>
+          <select name="aplikasi" id="aplikasi" disabled>
+            <option value="">-- Pilih Aplikasi --</option>
+          </select>
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="tipeOrder">Tipe Order Aplikasi</label>
-            <select name="tipeorder" id="tipeOrder" disabled>
-              <option value="">-- Pilih Tipe --</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="tipeOrder">Tipe Order Aplikasi</label>
+          <select name="tipeorder" id="tipeOrder" disabled>
+            <option value="">-- Pilih Tipe --</option>
+          </select>
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="durasi">Durasi</label>
-            <select name="durasi" id="durasi" disabled>
-              <option value="">-- Pilih Durasi --</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="durasi">Durasi</label>
+          <select name="durasi" id="durasi" disabled>
+            <option value="">-- Pilih Durasi --</option>
+          </select>
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="zakiy@gmail.com"
-            />
-          </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="zakiy@gmail.com"
+          />
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="device">Lokasi dan Merk Device</label>
-            <input
-              type="text"
-              id="device"
-              name="device"
-              placeholder="Contoh: Jakarta, Samsung S22"
-            />
-          </div>
+        <div class="form-group">
+          <label for="device">Lokasi dan Merk Device</label>
+          <input
+            type="text"
+            id="device"
+            name="device"
+            placeholder="Contoh: Jakarta, Samsung S22"
+          />
+          <p class="error-text"></p>
+        </div>
 
-          <div class="form-group">
-            <label for="payment">Metode Pembayaran</label>
-            <select id="payment" name="payment">
-              <option value="">-- Pilih Metode Pembayaran --</option>
-              <option value="qris">QRIS</option>
-              <option value="dana">DANA - +6282234171488 a.n. Z</option>
-              <option value="shopeepay">
-                SHOPEEPAY - +6282234171488 a.n. Z
-              </option>
-              <option value="ovo">OVO (+1k) - +6282234171488 a.n. Z</option>
-              <option value="bni">BANK BNI - 1787281307 a.n. Z</option>
-              <option value="jagosyariah">
-                BANK JAGO Syariah - 503273818564 a.n. Z
-              </option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="payment">Metode Pembayaran</label>
+          <select id="payment" name="payment">
+            <option value="">-- Pilih Metode Pembayaran --</option>
+            <option value="qris">QRIS</option>
+            <option value="dana">DANA - +6282234171488 a.n. Z</option>
+            <option value="shopeepay">SHOPEEPAY - +6282234171488 a.n. Z</option>
+            <option value="ovo">OVO (+1k) - +6282234171488 a.n. Z</option>
+            <option value="bni">BANK BNI - 1787281307 a.n. Z</option>
+            <option value="jagosyariah">
+              BANK JAGO Syariah - 503273818564 a.n. Z
+            </option>
+          </select>
+          <p class="error-text"></p>
+        </div>
 
-          <button type="submit" class="submit-btn">Order Sekarang</button>
-        </form>
-      </div>
-      <div class="detail-order">
-        <h2>Detail Order</h2>
-
-        <ul class="list-group">
-          <li class="list-group-item">Nama Lengkap :</li>
-          <li class="list-group-item">Tanggal Pemesanan :</li>
-          <li class="list-group-item">Email :</li>
-          <li class="list-group-item">Metode Pembayaran :</li>
-        </ul>
-      </div>
+        <button type="submit" class="submit-btn" id="btnSubmit">
+          Order Sekarang
+        </button>
+      </form>
     </div>
 
     <div class="data-table">
       <h2>List Data Pemesanan</h2>
       <hr />
-      <!-- <table>
+      <table id="orderTable">
         <thead>
           <tr>
-            <th>Nama</th>
-            <th>Tanggal</th>
-            <th>Aktivasi</th>
+            <th>Nama Lengkap</th>
+            <th>Tanggal Pemesanan</th>
+            <th>Jenis Aplikasi</th>
+            <th>Nama Aplikasi</th>
+            <th>Tipe Order Aplikasi</th>
+            <th>Durasi</th>
+            <th>Harga</th>
             <th>Email</th>
-            <th>Pembayaran</th>
+            <th>Lokasi & Merk Device</th>
+            <th>Metode Pembayaran</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody id="dataBody"></tbody>
-      </table> -->
+      </table>
 
       <h2 class="order-empty">Belum ada order.</h2>
     </div>
 
+    <script type="module" src="forms.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

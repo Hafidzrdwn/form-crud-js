@@ -14,7 +14,6 @@ UPN "Veteran" Jawa Timur - Fakultas Ilmu Komputer - Sistem Informasi
 
 ## 📚 ToDo
 
-- Menampilkan Detail
 - Validation Form
 - Menampilkan Data di Tabel (R)
 - Menambahkan Data (C)
