@@ -1,8 +1,8 @@
-# ✨ Praktek 2 - FORM CRUD - Pemrograman Web
+# ✨ Praktek 3 - FORM CRUD - Pemrograman Web
 
 ## ✏️ Deskripsi
 
-Repository ini berisi file-file yang digunakan untuk Praktek 2 FORM CRUD - Pemrograman Web Kelas IV-C,
+Repository ini berisi file-file yang digunakan untuk Praktek Kelompok ke-3 FORM CRUD - Pemrograman Web Kelas IV-C,
 UPN "Veteran" Jawa Timur - Fakultas Ilmu Komputer - Sistem Informasi
 
 ## 👥 Anggota Kelompok 1
@@ -14,8 +14,8 @@ UPN "Veteran" Jawa Timur - Fakultas Ilmu Komputer - Sistem Informasi
 
 ## 📚 ToDo
 
-- Validation Form
-- Menampilkan Data di Tabel (R)
-- Menambahkan Data (C)
-- Mengubah Data (U)
-- Menghapus Data (D)
+- Validation Form ✅
+- Menampilkan Data di Tabel (R) ✅
+- Menambahkan Data (C) ✅
+- Mengubah Data (U) ✅
+- Menghapus Data (D) ✅
